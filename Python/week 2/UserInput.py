@@ -1,6 +1,0 @@
-Name = input ("Hi I am python what is your name")
-print("Hello, "+ Name + "!" + "nice to meet you!")
-Age = input  ("How old are you?") 
-print("Impressive!")
-grade = input ("What grade are you going to next year?")
-print = ("wow, close to finishing.") 
