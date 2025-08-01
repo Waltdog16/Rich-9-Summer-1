@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walter Survine IV | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d346c08c8e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- ------------- Header Section ------------- -->
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/TheHiddenGeniusProject10_yellow-05-2-e1683092123729.png" class="logo" alt="Logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Hidden Genius Project Student</p>
+            <h2>Hi, I'm <span>Walter</span> Survine IV <br> from California</h2>
+        </div>
+    </div>
+</div>
+
+<!-- ------------- About Section ------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Untitled Project.jpg" alt="Walter Survine IV">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    I am Walter Survine IV. My birthday is 10/16/2008 and I am 16 years old.
+                    I attend El Cerrito High School and I am currently a student in
+                    The Hidden Genius Project.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Python:</span><br>Beginner</li>
+                        <li><span>HTML:</span><br>Beginner</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span></span><br></li>
+                        <li><span></span><br></li>
+                        <li><span>2025 - Present</span><br>The Hidden Genius Project</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>King Middle School</span><br></li>
+                        <li><span>John Muir Elementary</span><br></li>
+                        <li><span>Berkeley High School</span><br></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------------- Services Section ------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div class="service-col">
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>Game Development</h2>
+                <p>I can create games using Unity and Unreal Engine.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="service-col">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Web Development</h2>
+                <p>I can create basic websites and apps.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="service-col">
+                <i class="fa-solid fa-code"></i>
+                <h2>Help with Code</h2>
+                <p>I can help debug and improve your coding projects.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------------- Portfolio Section ------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.webp" alt="Game Development Project">
+                <div class="layer">
+                    <h3>Game Development</h3>
+                    <p>Games are more than entertainment—they're tools for creativity, learning, and connection. My goal is to create games that inspire and engage players.</p>
+                    <a href="#"><i class="fa-solid fa-gamepad"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/621675c05eb08a490b32f9f1_image+(1) (1).webp" alt="Game Development Example">
+                <div class="layer">
+                    <h3>Game Development</h3>
+                    <p>Game development blends creativity, technology, and storytelling to build unique, engaging experiences that connect people worldwide.</p>
+                    <a href="#"><i class="fa-solid fa-gamepad"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/3f2fd674a17d2d53970ec4e387f7e308e2aace7a.png" alt="Code Help Project">
+                <div class="layer">
+                    <h3>Code Help</h3>
+                    <p>Helping others with code improves skills, fosters collaboration, and builds a stronger, supportive coding community.</p>
+                    <a href="#"><i class="fa-solid fa-code-compare"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------------- Contact Section ------------- -->
+<div id="contact">
+    <div class="container">
+        <h1 class="sub-title">Contact Me</h1>
+        <p>Email: walter@example.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </div>
+</div>
+
+<!-- ------------- JavaScript ------------- -->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(event, tabname) {
+        for (let tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (let tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
